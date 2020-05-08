@@ -15,7 +15,7 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -f web *
+  - zip -r web *
   - mkdir -p deploy
   - mv web.zip deploy/web.zip
 

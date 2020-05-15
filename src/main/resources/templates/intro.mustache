@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+{{>layout/header}}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>New Age - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
-
-</head>
 
 <body id="page-top">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" title="맨위로">대회 등록 하기</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -41,13 +15,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                    <a class="nav-link js-scroll-trigger" href="#regist">회원가입</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+                    <a class="nav-link js-scroll-trigger" href="#login">로그인</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#racelist">대회정보</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#community">대회후기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#training">트레이닝</a>
                 </li>
             </ul>
         </div>
@@ -59,8 +39,10 @@
         <div class="row h-100">
             <div class="col-lg-7 my-auto">
                 <div class="header-content mx-auto">
-                    <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                    <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+                    <h2 class="mb-5">2020 경기국제하프마라톤 <br> 대회일시:2020년11월8일 <br> 접수기간:2020년1월2일~10월21일
+                        <br> 대회장소:수원종합운동장 <br>
+                    </h2>
+                    <a href="http://www.ggimarathon.com/" class="btn btn-outline btn-xl js-scroll-trigger">대회 신청 하기!</a>
                 </div>
             </div>
             <div class="col-lg-5 my-auto">
@@ -69,7 +51,7 @@
                         <div class="device">
                             <div class="screen">
                                 <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                <img src="img/suwon-total.jpg" class="img-fluid" alt="">
                             </div>
                             <div class="button">
                                 <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -86,8 +68,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                <p>Our app is available on any mobile device! Download now to get started!</p>
+                <h2 class="section-heading">RaceOnCrew 모바일앱도 제공 합니다! 누구나 언제 어디서든 더 펀리하게</h2>
+                <p>안드로이드와 아이폰에서 다운로드 받으세요!<br> 크루원뿐만 아니라 크루짱과 대회관계자들을 위한 관리자 기능도 지원!!!</p>
                 <div class="badges">
                     <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
                     <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
@@ -100,8 +82,8 @@
 <section class="features" id="features">
     <div class="container">
         <div class="section-heading text-center">
-            <h2>Unlimited Features, Unlimited Fun</h2>
-            <p class="text-muted">Check out what you can do with this app theme!</p>
+            <h2>크루 운영자와 대회 관계자를 위한 편리한 관리자 기능을 제공합니다.</h2>
+            <p class="text-muted">개인참가 등록, 단체(크루)대회 등록, 대회비 관리, 입급, 환불이 편리해 집니다.</p>
             <hr>
         </div>
         <div class="row">
@@ -126,15 +108,15 @@
                         <div class="col-lg-6">
                             <div class="feature-item">
                                 <i class="icon-screen-smartphone text-primary"></i>
-                                <h3>Device Mockups</h3>
-                                <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                <h3>반복적인 정보입력은 No</h3>
+                                <p class="text-muted">입력한 정보는 한번만으로 끝. 매번 대회때마다 정보 입력이 필요없습니다.</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="feature-item">
                                 <i class="icon-camera text-primary"></i>
-                                <h3>Flexible Use</h3>
-                                <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                <h3>단체등록은 더 편하게</h3>
+                                <p class="text-muted">내 동료들의 신청정보를 간편하게 모으고 관리합니다</p>
                             </div>
                         </div>
                     </div>
@@ -142,15 +124,15 @@
                         <div class="col-lg-6">
                             <div class="feature-item">
                                 <i class="icon-present text-primary"></i>
-                                <h3>Free to Use</h3>
-                                <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                <h3>환불은 빠르고 정확하게</h3>
+                                <p class="text-muted">누구에게나 불편했던 대회비관리가 이제 쉬워집니다. 클릭한번으로 환불처리 즉시 완료</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="feature-item">
                                 <i class="icon-lock-open text-primary"></i>
-                                <h3>Open Source</h3>
-                                <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                <h3>달리는 즐거움은 두배로</h3>
+                                <p class="text-muted">혼자도 좋지만 나와 실력이 비슷한 사람들과 같이 달리며 즐겨보세요.</p>
                             </div>
                         </div>
                     </div>
@@ -163,8 +145,8 @@
 <section class="cta">
     <div class="cta-content">
         <div class="container">
-            <h2>Stop waiting.<br>Start building.</h2>
-            <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+            <h2>훈련정보<br>마라톤정보<br>트레이닝소개</h2>
+            <a href="#training" class="btn btn-outline btn-xl js-scroll-trigger">나에게 맞는 최적의 트레이닝</a>
         </div>
     </div>
     <div class="overlay"></div>
@@ -172,9 +154,9 @@
 
 <section class="contact bg-primary" id="contact">
     <div class="container">
-        <h2>We
+        <h2>지인들과 함께 해요
             <i class="fas fa-heart"></i>
-            new friends!</h2>
+            대회 소식(후기) 전하기</h2>
         <ul class="list-inline list-social">
             <li class="list-inline-item social-twitter">
                 <a href="#">
@@ -195,18 +177,27 @@
     </div>
 </section>
 
+
 <footer>
     <div class="container">
-        <p>&copy; Your Website 2019. All Rights Reserved.</p>
+        <p>Copyright &copy; Race on Crew 2020. All Rights Reserved.<br/>
+        <div class="list-inline">
+            RaceOnCrew <span>|</span>
+            대표 : 나대표 <span>|</span>
+            사업자등록번호 : 000-00-00000<br/>
+            주소 : 서울시 양천구 양천대로 788 스타빌딩 4층<br/>
+            TEL : 02-1111-1111 <span>|</span>
+            FAX : 02-0000-0000 TEL : 010-1111-1111<br/>
+        </div>
         <ul class="list-inline">
             <li class="list-inline-item">
-                <a href="#">Privacy</a>
+                <a href="#privacy">개인정보처리방침</a>
             </li>
             <li class="list-inline-item">
-                <a href="#">Terms</a>
+                <a href="#provision">이메일무단수집거부</a>
             </li>
             <li class="list-inline-item">
-                <a href="#">FAQ</a>
+                <a href="#contact">문의</a>
             </li>
         </ul>
     </div>
@@ -223,5 +214,4 @@
 <script src="js/new-age.min.js"></script>
 
 </body>
-
 </html>

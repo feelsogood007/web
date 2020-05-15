@@ -31,7 +31,13 @@ public class IndexController {
         }
 
         return "index";
-        //return "intro";
+    }
+
+
+    @GetMapping("/intro")
+    public String index(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
+        return "intro";
     }
 
 
